@@ -4,17 +4,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 
 import com.mogusoul.music.core.musicplayer.dummy.DummyContent;
 
@@ -41,16 +42,34 @@ public class ItemListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        toolbar.setTitle(getTitle());
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        toolbar.setTitle(getTitle());
+//        setTitle("1234");
+
+        final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+
+//                show();
+
+                        if (mTwoPane){
+
+                            findViewById(R.id.haha).setVisibility(View.VISIBLE);
+                            mTwoPane = false;
+                        } else {
+                            findViewById(R.id.haha).setVisibility(View.GONE);
+                            mTwoPane = true;
+                        }
+
+
             }
         });
 
@@ -66,6 +85,80 @@ public class ItemListActivity extends AppCompatActivity {
             mTwoPane = true;
         }
     }
+
+
+
+
+    private void show(){
+
+        ActionWindow window = new ActionWindow(getContext());
+        window.init();
+
+        View view = getWindow().getDecorView();
+
+//        View view = findViewById(R.id.aaa);
+
+        window.showAtLocation(view, Gravity.TOP,0,0);
+
+    }
+
+
+    @SuppressWarnings("this")
+    public class ActionWindow extends PopupWindow {
+
+
+        public ActionWindow(Context context) {
+            super(context, null, 0);
+        }
+
+        public void init(){
+            final RelativeLayout layout = (RelativeLayout) LayoutInflater.from(getContext()).inflate(R.layout.popup_publish, null);
+            setContentView(layout);
+            //设置SelectPicPopupWindow弹出窗体的宽
+            setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
+            //设置SelectPicPopupWindow弹出窗体的高
+
+
+            DisplayMetrics dm = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(dm);
+            int width = dm.widthPixels;  //屏幕宽
+            int height = dm.heightPixels;  //屏幕高
+            setHeight(height);
+
+//            setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
+
+//            setSupportOverlapAnchor(true);
+
+
+//            setWindowLayoutType(WindowManager.LayoutParams.TYPE_APPLICATION_PANEL);
+//            setWindowLayoutMode(1, View.MeasureSpec.makeMeasureSpec(1300,View.MeasureSpec.UNSPECIFIED));
+
+            layout.findViewById(R.id.dd).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dismiss();
+                }
+            });
+
+            setOutsideTouchable(true);
+            setFocusable(true);
+
+        }
+
+
+    }
+
+
+    public Context getContext(){
+        return this;
+    }
+
+
+
+
+
+
+
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(DummyContent.ITEMS));
