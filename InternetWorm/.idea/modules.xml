@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/InternetWorm.iml" filepath="$PROJECT_DIR$/InternetWorm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WormApp/WormApp.iml" filepath="$PROJECT_DIR$/WormApp/WormApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WormServices/WormServices.iml" filepath="$PROJECT_DIR$/WormServices/WormServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WormApp/app.iml" filepath="$PROJECT_DIR$/WormApp/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WormServices/worm.iml" filepath="$PROJECT_DIR$/WormServices/worm.iml" />
+    </modules>
+  </component>
+</project>

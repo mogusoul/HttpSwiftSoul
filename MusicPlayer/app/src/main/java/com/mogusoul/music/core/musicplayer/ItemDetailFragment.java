@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.mogusoul.music.core.musicplayer.dummy.DummyContent;
+import com.mogusoul.music.dummy.DummyContent;
 
 /**
  * A fragment representing a single Item detail screen.

@@ -17,7 +17,8 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.mogusoul.music.core.musicplayer.dummy.DummyContent;
+import com.mogusoul.music.dummy.DummyContent;
+import com.mogusoul.music.ui.SettingsActivity;
 
 import java.util.List;
 
@@ -55,19 +56,20 @@ public class ItemListActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                Snackbar.make(com.mogusoul.music.view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
 
 //                show();
 
-                        if (mTwoPane){
-
-                            findViewById(R.id.haha).setVisibility(View.VISIBLE);
-                            mTwoPane = false;
-                        } else {
-                            findViewById(R.id.haha).setVisibility(View.GONE);
-                            mTwoPane = true;
-                        }
+//                        if (mTwoPane){
+//
+//                            findViewById(R.id.haha).setVisibility(View.VISIBLE);
+//                            mTwoPane = false;
+//                        } else {
+//                            findViewById(R.id.haha).setVisibility(View.GONE);
+//                            mTwoPane = true;
+//                        }
+                startActivity(new Intent(getContext(), SettingsActivity.class));
 
 
             }
@@ -78,9 +80,9 @@ public class ItemListActivity extends AppCompatActivity {
         setupRecyclerView((RecyclerView) recyclerView);
 
         if (findViewById(R.id.item_detail_container) != null) {
-            // The detail container view will be present only in the
+            // The detail container com.mogusoul.music.view will be present only in the
             // large-screen layouts (res/values-w900dp).
-            // If this view is present, then the
+            // If this com.mogusoul.music.view is present, then the
             // activity should be in two-pane mode.
             mTwoPane = true;
         }
@@ -96,7 +98,7 @@ public class ItemListActivity extends AppCompatActivity {
 
         View view = getWindow().getDecorView();
 
-//        View view = findViewById(R.id.aaa);
+//        View com.mogusoul.music.view = findViewById(R.id.aaa);
 
         window.showAtLocation(view, Gravity.TOP,0,0);
 
