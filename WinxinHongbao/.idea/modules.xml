@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WeixinHelper/app.iml" filepath="$PROJECT_DIR$/WeixinHelper/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeixinMessageHelper/WeixinMessageHelper.iml" filepath="$PROJECT_DIR$/WeixinMessageHelper/WeixinMessageHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WinxinHongbao.iml" filepath="$PROJECT_DIR$/WinxinHongbao.iml" />
+    </modules>
+  </component>
+</project>
