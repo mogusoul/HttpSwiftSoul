@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_78f99f063cd371b0b5b1c2eb911657d07a9193cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_e3f61367a55f04819955de410a9148c417759667.jar" />
+    </item>
+    <item
+        jar="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_df6f0bfda379d037b7be970ac564488d84067c70.jar" />
+    </item>
+    <item
+        jar="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_224a6f1709075a06769d87cca0d1cbeff3474fc1.jar" />
+    </item>
+    <item
+        jar="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_5611c17cdf63a3e16c964c8b5adae65438e0ace7.jar" />
+    </item>
+    <item
+        jar="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\github\HttpSwiftSoul\WinxinHongbao\WeixinHelper\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_360d1881fcb273f6c529901693054fa5ac6ed170.jar" />
+    </item>
+
+</items>

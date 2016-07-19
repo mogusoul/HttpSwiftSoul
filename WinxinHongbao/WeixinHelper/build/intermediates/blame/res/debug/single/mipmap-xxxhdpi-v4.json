@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\github\\HttpSwiftSoul\\WinxinHongbao\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\github\\HttpSwiftSoul\\WinxinHongbao\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\github\\HttpSwiftSoul\\WinxinHongbao\\WeixinHelper\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\github\\HttpSwiftSoul\\WinxinHongbao\\WeixinHelper\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    }
+]
