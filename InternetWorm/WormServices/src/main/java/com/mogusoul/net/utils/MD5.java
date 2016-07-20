@@ -20,8 +20,7 @@ public class MD5 {
 
             byte[] digest = instance.digest();
 
-
-            return new String(Hex.encodeHex(digest));
+            return new String(Hex.encodeHex(digest,false));
         } catch (Exception e) {
             return null;
         }

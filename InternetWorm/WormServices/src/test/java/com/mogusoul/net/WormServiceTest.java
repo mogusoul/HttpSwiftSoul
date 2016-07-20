@@ -1,10 +1,11 @@
 package com.mogusoul.net;
 
+import com.mogusoul.net.cache.CacheManager;
 import com.mogusoul.net.service.HtmlDownloadService;
+import com.mogusoul.net.worm.K17FictionWorm;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -20,9 +21,31 @@ public class WormServiceTest {
     @Test
     public void test() throws Exception {
 
-        System.out.print(new String("而诞生过华为哦".getBytes("gbk")));
         assertEquals(4, 2 + 2);
     }
+
+    @Test
+    public void testK17FictionWorm() throws Exception {
+
+
+        K17FictionWorm worm = new K17FictionWorm("mingzei");
+
+        worm.getDocument(url);
+
+        System.out.println(worm.parseTitle());
+        System.out.println(worm.parseTime());
+        System.out.println(worm.parsePre());
+        System.out.println(worm.parseNext());
+        System.out.println(worm.getCompleteUrl(worm.parseNext()));
+        System.out.println(worm.parseContent());
+
+
+        assertEquals(4, 2 + 2);
+    }
+
+
+
+
 
 
 
@@ -33,7 +56,9 @@ public class WormServiceTest {
 
         HtmlDownloadService htmlService = new HtmlDownloadService();
 
-        Document doc = htmlService.download(url);
+//        Document doc = htmlService.download(url);
+        Document doc = new CacheManager("mingzei").getCacheDocument(url);
+
         if (doc == null){
             System.out.println("doc is null.");
             return;
@@ -47,23 +72,30 @@ public class WormServiceTest {
 //        System.out.println("content:"+style);
         element.select("style").remove();
         element.select("div").remove();
-//        element.select("<").remove();
-        System.out.println(element.getAllElements().size());
+//        element.select("!-").remove();
+        System.out.println(element.html());
 
-        int size = element.getAllElements().size();
+//        int size = element.getAllElements().size();
+//        StringBuffer sb = new StringBuffer();
 //        for (int i=0;i<size;i++){
 //            String node = element.childNode(i).outerHtml();
-//            System.out.println("id="+i+":"+node);
+//            sb.append(node);
+////            sb.append("\n");
 //        }
+//        System.out.println(sb.toString());
 
 
-
+//
 //        Elements elements = doc.select("div[class=btn right]");
 //        elements = elements.select("ul");
 //
 //        Elements e = elements.select("a:contains(下一章)");
 //        String s1 = e.get(0).attr("href");
+//        System.out.println(s1);
 //        System.out.println(e.get(0));
+
+
+
 //
 //
 //        System.out.println(s1+"\n");
@@ -73,11 +105,11 @@ public class WormServiceTest {
 
 
 
-        Elements name = doc.select("h1[itemprop=headline]");
-        Elements time = doc.select("div[class=chapter_update_time]");
-
-        System.out.println(name.html());
-        System.out.println(time.html());
+//        Elements name = doc.select("h1[itemprop=headline]");
+//        Elements time = doc.select("div[class=chapter_update_time]");
+//
+//        System.out.println(name.html());
+//        System.out.println(time.html());
 
 //        System.out.println("content:\n"+element.html());
 //        System.out.println("content:"+doc.html());
