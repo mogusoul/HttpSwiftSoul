@@ -6,3 +6,6 @@
 .DS_Store
 /build
 /captures
+fictions/
+#libs/
+#src/main/java/com/mogusoul/net/model/
