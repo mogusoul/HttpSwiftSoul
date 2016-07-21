@@ -2,7 +2,11 @@
 
 buildscript {
     repositories {
+
+//        maven { url "http://repo.spring.io/libs-snapshot" }
+//        mavenCentral()
         jcenter()
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.2'

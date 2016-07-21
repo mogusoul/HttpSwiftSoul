@@ -8,14 +8,18 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/WormApp" />
+            <option value="$PROJECT_DIR$/ParseNovelsKenel" />
+            <option value="$PROJECT_DIR$/ServiceRestApi" />
+            <option value="$PROJECT_DIR$/SoulBookApp" />
             <option value="$PROJECT_DIR$/WormServices" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/WormApp" />
+            <option value="$PROJECT_DIR$/ParseNovelsKenel" />
+            <option value="$PROJECT_DIR$/ServiceRestApi" />
+            <option value="$PROJECT_DIR$/SoulBookApp" />
             <option value="$PROJECT_DIR$/WormServices" />
           </set>
         </option>

@@ -1,1 +1,1 @@
-include ':WormApp', ':WormServices'
+include ':SoulBookApp', ':WormServices', ':ParseNovelsKenel', ':ServiceRestApi'

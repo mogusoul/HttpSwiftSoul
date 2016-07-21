@@ -3,13 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/InternetWorm.iml" filepath="$PROJECT_DIR$/InternetWorm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/InternetWorm.iml" filepath="$PROJECT_DIR$/InternetWorm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WormApp/WormApp.iml" filepath="$PROJECT_DIR$/WormApp/WormApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WormApp/WormApp.iml" filepath="$PROJECT_DIR$/WormApp/WormApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParseNovelsKenel/ParseNovelsKenel.iml" filepath="$PROJECT_DIR$/ParseNovelsKenel/ParseNovelsKenel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceRestApi/ServiceRestApi.iml" filepath="$PROJECT_DIR$/ServiceRestApi/ServiceRestApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoulBookApp/SoulBookApp.iml" filepath="$PROJECT_DIR$/SoulBookApp/SoulBookApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/WormServices/WormServices.iml" filepath="$PROJECT_DIR$/WormServices/WormServices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WormServices/WormServices.iml" filepath="$PROJECT_DIR$/WormServices/WormServices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WormApp/app.iml" filepath="$PROJECT_DIR$/WormApp/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WormServices/worm.iml" filepath="$PROJECT_DIR$/WormServices/worm.iml" />
     </modules>
   </component>
 </project>
