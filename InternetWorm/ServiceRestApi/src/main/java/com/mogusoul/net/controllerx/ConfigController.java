@@ -38,6 +38,8 @@ public class ConfigController {
 
 //        add();
         logger.info ("ConfigController::config()");
+        logger.warn ("ConfigController::config()");
+        logger.fatal("ConfigController::config()");
         logger.error("ConfigController::config()");
         logger.debug("ConfigController::config()");
 
