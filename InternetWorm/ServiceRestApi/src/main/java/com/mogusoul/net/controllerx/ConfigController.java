@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.File;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
@@ -32,14 +33,17 @@ public class ConfigController {
     @RequestMapping("/config")
     @ResponseBody
     @Action(name = "test ConfigController")
-    public Testing configtee(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+    public Testing config(@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
         System.out.println("==== in config ====");
 
 //        add();
-        logger.info ("test info message!");
-        logger.debug("test debug message!");
-        logger.warn("test warn message!");
-        logger.error("test error message!");
+        logger.info ("ConfigController::config()");
+        logger.warn ("ConfigController::config()");
+        logger.fatal("ConfigController::config()");
+        logger.error("ConfigController::config()");
+        logger.debug("ConfigController::config()");
+
+        System.out.println(new File("").getAbsolutePath());
 
         return new Testing(counter.incrementAndGet(),
                 String.format(template, name));
