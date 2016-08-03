@@ -3,6 +3,8 @@ package com.mogusoul.net.application;
 import com.mogusoul.net.configs.ApplicationConfig;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.Arrays;
@@ -12,7 +14,7 @@ import java.util.Arrays;
  */
 
 
-public class Application {
+public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(ApplicationConfig.class, args);
@@ -24,5 +26,12 @@ public class Application {
             System.out.println("beanName: "+beanName);
         }
     }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(ApplicationConfig.class);
+    }
+
+
 
 }

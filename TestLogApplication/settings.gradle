@@ -1,1 +1,1 @@
-include ':app', ':loggertest'
+include ':loggertest', ':soulbook-webapp'

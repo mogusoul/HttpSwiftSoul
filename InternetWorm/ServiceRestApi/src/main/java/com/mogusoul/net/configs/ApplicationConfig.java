@@ -1,6 +1,7 @@
 package com.mogusoul.net.configs;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -22,5 +23,9 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class ApplicationConfig {
 
 
+    @Bean
+    public void dataSource() {
+
+    }
 
 }

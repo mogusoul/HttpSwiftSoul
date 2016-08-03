@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TestLogApplication.iml" filepath="$PROJECT_DIR$/TestLogApplication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/loggertest/loggertest.iml" filepath="$PROJECT_DIR$/loggertest/loggertest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soulbook-webapp/soulbook-webapp.iml" filepath="$PROJECT_DIR$/soulbook-webapp/soulbook-webapp.iml" />
     </modules>
   </component>
 </project>
